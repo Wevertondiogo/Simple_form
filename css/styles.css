@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: var(--bg);
+
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  background-color: var(--bg-form);
+  width: 80%;
+
+  padding: 2rem;
+}
+
+.form-header {
+  display: grid;
+  gap: 10px;
+}
+
+.form-title,
+.form-subtitle,
+.form-label {
+  color: var(--text);
+}
+
+.form-title {
+  font-size: 2rem;
+}
+.form-subtitle {
+  font-weight: 400;
+}
+.form-wrap {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 20px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-label {
+  text-transform: uppercase;
+  font-weight: 600;
+
+  font-size: 0.9rem;
+}
+.form-label.term {
+  font-size: 0.6rem;
+  margin-top: 10px;
+}
+.form-control {
+  padding: 0.7rem 0;
+
+  background-color: var(--bg-input);
+
+  border: 1px solid var(--bg);
+
+  border-radius: 7px;
+  outline: 0;
+  text-indent: 5px;
+}
+.form-control:focus {
+  box-shadow: 0 0 5px var(--bg);
+  background-color: var(--bg-input-focus);
+}
+.form-footer {
+  margin-top: 2.5rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+.form-group-footer {
+  display: flex;
+  align-items: center;
+}
+.form-check-input {
+  margin-right: 0.8rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.form-check-input:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+  background-color: var(--bg-before-input);
+}
+.form-check-input:checked:before {
+  content: "";
+  position: absolute;
+
+  background-color: var(--bg-input-checked);
+}
+.form-check-input:checked:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+
+  width: 5px;
+  height: 10px;
+
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+
+  transform: rotate(45deg);
+}
+
+span {
+  color: var(--bg);
+}
+
+.btn {
+  width: 8.5rem;
+  height: 3rem;
+
+  border: none;
+
+  color: #fff;
+
+  text-transform: uppercase;
+
+  font-size: 1.2rem;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.btn-sign {
+  background-color: var(--btn-sign);
+}

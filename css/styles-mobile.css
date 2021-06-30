@@ -1,0 +1,17 @@
+@media (max-width: 550px) {
+  .form-title {
+    font-size: 1.8rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+
+    width: 6rem;
+  }
+  .form-control {
+    width: 100%;
+  }
+
+  .form-label.term {
+    font-size: 0.4rem;
+  }
+}

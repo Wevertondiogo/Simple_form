@@ -1,0 +1,13 @@
+:root {
+  --bg: #8fc4ce;
+
+  --bg-form: #fff;
+
+  --text: #7b7f80;
+
+  --btn-sign: #ef484a;
+  --bg-input-focus: #eef7f9;
+  --bg-input: #fcfbfc;
+  --bg-before-input: #e9e9e9;
+  --bg-input-checked: #1e80ef;
+}
