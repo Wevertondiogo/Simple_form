@@ -1,4 +1,12 @@
 jQuery(() => {
+  $.validator.addMethod(
+    "isChecked",
+    (value, element) => {
+      if (element.checked) return true;
+      else return false;
+    },
+    "Please agree the term to continue."
+  );
   $(".form").validate({
     rules: {
       userName: {
@@ -21,6 +29,13 @@ jQuery(() => {
         maxlength: 20,
         equalTo: "#password",
       },
+      checkbox: {
+        isChecked: true,
+      },
     },
   });
+});
+
+$(":checkbox").click(() => {
+  const checkbox = $(".form-check-input");
 });

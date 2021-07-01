@@ -81,6 +81,8 @@ body {
 .form-group-footer {
   display: flex;
   align-items: center;
+
+  position: relative;
 }
 .form-check-input {
   margin-right: 0.8rem;
@@ -146,4 +148,8 @@ span {
 
 .error {
   color: var(--error);
+}
+label#checkbox-error {
+  position: absolute;
+  bottom: -15px;
 }

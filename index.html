@@ -30,16 +30,16 @@
             </div>
             <div class="form-group">
                 <label class="form-label">password</label>
-                <input type="password" id="password" class="form-control" name="password">
+                <input type="password" id="password" class="form-control" maxlength="20" name="password">
             </div>
             <div class="form-group">
                 <label class="form-label">confirm password</label>
-                <input type="password" class="form-control" name="confirmPassword">
+                <input type="password" class="form-control" maxlength="20" name="confirmPassword">
             </div>
         </div>
         <div class="form-footer">
             <div class="form-group-footer">
-                <input type="checkbox" class="form-check-input">
+                <input type="checkbox" class="form-check-input" name="checkbox">
                 <label  class="form-label term">I have read and agreed with the <span>terms and conditions</span></label>
             </div>
             <input type="submit" value="Sign up" class="btn btn-sign">
@@ -48,6 +48,7 @@
 
     <script src="js/libs/jquery-3.6.0.min.js"></script>
     <script src="js/plugins/jquery.validate.min.js"></script>
+    <script src="js/plugins/additional-methods.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

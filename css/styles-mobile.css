@@ -11,7 +11,11 @@
     width: 100%;
   }
 
-  .form-label.term {
+  .form-label.term,
+  label#checkbox-error {
     font-size: 0.4rem;
+  }
+  label#checkbox-error {
+    bottom: 0;
   }
 }
