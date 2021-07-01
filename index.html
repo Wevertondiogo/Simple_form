@@ -22,19 +22,19 @@
         <div class="form-wrap">
             <div class="form-group">
                 <label class="form-label">username</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" name="userName">
             </div>
             <div class="form-group">
                 <label class="form-label">email</label>
-                <input type="email" class="form-control">
+                <input type="email" class="form-control" name="email">
             </div>
             <div class="form-group">
                 <label class="form-label">password</label>
-                <input type="password" class="form-control">
+                <input type="password" id="password" class="form-control" name="password">
             </div>
             <div class="form-group">
                 <label class="form-label">confirm password</label>
-                <input type="password" class="form-control">
+                <input type="password" class="form-control" name="confirmPassword">
             </div>
         </div>
         <div class="form-footer">
@@ -45,5 +45,9 @@
             <input type="submit" value="Sign up" class="btn btn-sign">
         </div>
     </form>
+
+    <script src="js/libs/jquery-3.6.0.min.js"></script>
+    <script src="js/plugins/jquery.validate.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
